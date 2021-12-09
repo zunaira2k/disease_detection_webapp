@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Diseases Detector</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">DISEASES DETECTOR</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">ABOUT </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">CONTACT US</a>
+            </li>
+          </ul>
+          <!-- <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form> -->
+        </div>
+      </div>
+    </nav>
+
+   <div class="container">
+    <h2 class="text-center mt-3">Coronavirus Probability Detector</h2>
+          <form action="show.html" method="POST">
+            <div class="form-group">
+              <label for="fever">Enter fever Value</label>
+              <input type="text" class="form-control" id="fever" name="fever" placeholder="Enter Fever Value" Required>
+            </div>
+            <div class="form-group">
+              <label for="cough">Enter Yes If You have</label>
+              <select  class="form-control custom-select" name="cough" id="cough" Required>
+                <option value="0">No Cough</option> 
+                <option value="1">Cough</option> 
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="Age">Enter Age Value</label>
+              <input type="text" class="form-control" id="age" name="age" placeholder="Enter you Age" Required>
+            </div>
+             
+            <div class="form-group">
+              <label for="bodyPain">Body Pain</label>
+              <select  class="form-control custom-select" name="bodyPain" id="bodyPain" Required>
+                <option value="0">No Pain</option> 
+                <option value="1">Severe Pain</option> 
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="tired">Tiredness</label>
+              <select  class="form-control custom-select" name="tired" id="tired" Required>
+                <option value="0">No </option> 
+                <option value="1">Yes</option> 
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="sore_throat">Sore Throat</label>
+              <select  class="form-control custom-select" name="sore_throat" id="sore_throat" Required>
+                <option value="0">No</option> 
+                <option value="1">Yes</option> 
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="diarreha">Diarreha</label>
+              <select  class="form-control custom-select" name="diarreha" id="diarreha" Required>
+                <option value="0">No</option> 
+                <option value="1">Yes</option> 
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="runnyNose">Runny Nose</label>
+              <select  class="form-control custom-select" name="runnyNose" id="runnyNose" Required>
+                <option value="0">No</option> 
+                <option value="1">Yes</option> 
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="diffBreath">Breathing Difficulty</label>
+              <select  class="form-control custom-select" name="diffBreath" id="diffBreath" Required>
+                <option value="-1">No Difficulty</option> 
+                <option value="0">Little Difficulty</option> 
+                <option value="1">Severe Difficulty</option> 
+              </select>
+            </div>
+
+         
+            <button class="btn btn-success">Submit</button>
+          </form>
+      </div>
+      <br>
+      <br>
+      <footer>
+        <div class="bg-dark py-4">
+          <div class="container text-center">
+            <p class="text-muted mb-0 py-2">Made by Zunaira and yeshfeen </p>
+          </div>
+        </div>
+      </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

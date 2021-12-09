@@ -14,15 +14,15 @@ def data_split(data, ratio):
 
 if __name__ =="__main__":
     df = pd.read_csv('finaldataset.csv')
-    train, test = data_split(df, 0.3)
-    x_train = train[['fever', 'tired', 'cough', 'diffBreath', 'sore_throat','bodyPain', 'runnyNose', 'diarreha', 'age']].to_numpy()
-    x_test = test[['fever', 'tired', 'cough', 'diffBreath', 'sore_throat','bodyPain', 'runnyNose', 'diarreha', 'age']].to_numpy()
+    train, test = data_split(df, 0.2)
+    X_train = train[['fever', 'tired', 'cough', 'diffBreath', 'sore_throat','bodyPain', 'runnyNose', 'diarreha', 'age']].to_numpy()
+    X_test = test[['fever', 'tired', 'cough', 'diffBreath', 'sore_throat','bodyPain', 'runnyNose', 'diarreha', 'age']].to_numpy()
 
-    y_train = train[['Infection_probability']].to_numpy().reshape(221760, )
-    y_test = test[['Infection_probability']].to_numpy().reshape(95040, )
+    Y_train = train[['Infection_probability']].to_numpy().reshape(253440, )
+    Y_test = test[['Infection_probability']].to_numpy().reshape(63359, )
 
-    clf = LogisticRegression(solver='lbfgs',class_weight='None', max_iter=221760)
-    clf.fit(x_train, y_train)
+    clf = LogisticRegression(max_iter=316800,class_weight='balanced')
+    clf.fit(X_train, Y_train)
 
     # open a file, where you ant to store the data
     file = open('model.pkl', 'wb')
