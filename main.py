@@ -55,6 +55,7 @@ def show():
 
         # Code for inference
         inputFeatures = [fever, bodyPain, age, runnyNose, diffBreath, tired, diarreha, sore_throat, cough ]
+        print(inputFeatures)
         infProb =clf.predict_proba([inputFeatures])[0][1]
         print(infProb)
         return render_template('show.html', inf=round(infProb*100))
