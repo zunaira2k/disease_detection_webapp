@@ -10,6 +10,12 @@ file.close()
 @app.route('/')
 def index():
     return render_template('index.html')
+@app.route('/index.html')
+def index_2():
+    return render_template('index.html')
+@app.route('/about.html')
+def about():
+    return render_template('about.html')
 @app.route('/corona.html', methods=["GET", "POST"])
 def hello_world():
     # if request.method == "POST":
